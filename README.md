@@ -68,6 +68,8 @@ npm test
 2. Run the SQL files in `db/migrations/` in order against a Supabase project.
 3. `npm run dev`, then follow `docs/runbook.md` to register the mail webhook.
 
+`npm run verify` runs lint, type-check, the 89 tests and a production build. The app refuses to start without its settings, so the build step needs every variable from `.env.example` set (any placeholder works for a build). The CI workflow does exactly that.
+
 ## Author
 
 Built by [Yassine Emhamed](https://www.yassine-emhamed.net), IT and Network Engineer.
